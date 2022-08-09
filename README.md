@@ -90,6 +90,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 [Microverse](https://github.com/microverseinc) team. <br>
+Special thanks to @ibaslogic for providing the tutorial for this app on [React tutorial for beginners](https://ibaslogic.com/react-tutorial-for-beginners/).
 
 ## 📝 License
 
