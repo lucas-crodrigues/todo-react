@@ -1,28 +1,32 @@
-import React from "react";
+/* eslint-disable */
+import React from 'react';
 
 export default class InputTodo extends React.Component {
-  state = {
-    title: ""
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      title: '',
+    };
+  }
 
-  onChange = e => {
+  onChange = (e) => {
     this.setState({
       [e.target.name]: e.target.value,
     });
   };
-  
-  handleSubmit = e => {
-    e.preventDefault()
+
+  handleSubmit = (e) => {
+    e.preventDefault();
     if (this.state.title.trim()) {
-      this.props.addTodoProps(this.state.title)
+      this.props.addTodoProps(this.state.title);
       this.setState({
-        title: "",
-      })
+        title: '',
+      });
     } else {
-      alert("Please write item")
+      alert('Please write item');
     }
   };
-  
+
   render() {
     return (
       <form onSubmit={this.handleSubmit} className="form-container">
@@ -37,5 +41,5 @@ export default class InputTodo extends React.Component {
         <button className="input-submit">Submit</button>
       </form>
     );
-  };
-};
+  }
+}

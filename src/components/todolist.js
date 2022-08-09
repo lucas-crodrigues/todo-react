@@ -1,14 +1,15 @@
-import React from "react";
-import TodoItem from "./todoitem";
+/* eslint-disable */
+import React from 'react';
+import TodoItem from './todoitem';
 
 class TodoList extends React.Component {
   render() {
     return (
       <ul>
-        {this.props.todos.map(todo => (
-          <TodoItem 
-            key={todo.id} 
-            todo={todo} 
+        {this.props.todos.map((todo) => (
+          <TodoItem
+            key={todo.id}
+            todo={todo}
             handleChangeProps={this.props.handleChangeProps}
             deleteTodoProps={this.props.deleteTodoProps}
             setUpdate={this.props.setUpdate}
@@ -16,7 +17,7 @@ class TodoList extends React.Component {
         ))}
       </ul>
     );
-  };
-};
+  }
+}
 
 export default TodoList;
