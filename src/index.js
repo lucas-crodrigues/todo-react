@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import TodoContainer from './components/todocontainer';
 import './App.css';
 
